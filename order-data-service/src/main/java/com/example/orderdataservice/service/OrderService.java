@@ -36,7 +36,6 @@ public class OrderService {
 
     public OrderDTO create(final OrderDTO orderDTO) {
         final var order = Order.builder()
-                .id(orderDTO.getId())
                 .address(orderDTO.getAddress())
                 .buyer(orderDTO.getBuyer())
                 .build();
